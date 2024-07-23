@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Analytics />
-      <body className={inter.className}>{children}</body>
       <SpeedInsights />
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
