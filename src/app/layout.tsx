@@ -28,7 +28,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <Analytics />
-      <SpeedInsights />
       <html lang="en">
         <body className={inter.className}>
           <SignedOut>
@@ -38,6 +37,7 @@ export default function RootLayout({
             <UserButton />
           </SignedIn>
           {children}
+          <SpeedInsights />
         </body>
       </html>
     </ClerkProvider>
